@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{82FBFCB9-DFA5-4898-BD20-095E75733D5A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Budget_Master_2020</RootNamespace>
+    <AssemblyName>Budget Master 2020</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DotNetBrowser">
+      <HintPath>..\..\..\appdata\local\microsoft\visualstudio\16.0_7dd63c94\extensions\zosfvyjy.qqw\Library\bin\Release\net45\DotNetBrowser.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetBrowser.Chromium.Win-x64">
+      <HintPath>..\..\..\appdata\local\microsoft\visualstudio\16.0_7dd63c94\extensions\zosfvyjy.qqw\Library\bin\Release\net45\DotNetBrowser.Chromium.Win-x64.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetBrowser.Chromium.Win-x86">
+      <HintPath>..\..\..\appdata\local\microsoft\visualstudio\16.0_7dd63c94\extensions\zosfvyjy.qqw\Library\bin\Release\net45\DotNetBrowser.Chromium.Win-x86.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetBrowser.Core">
+      <HintPath>..\..\..\appdata\local\microsoft\visualstudio\16.0_7dd63c94\extensions\zosfvyjy.qqw\Library\bin\Release\net45\DotNetBrowser.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetBrowser.Logging">
+      <HintPath>..\..\..\appdata\local\microsoft\visualstudio\16.0_7dd63c94\extensions\zosfvyjy.qqw\Library\bin\Release\net45\DotNetBrowser.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetBrowser.WinForms">
+      <HintPath>..\..\..\appdata\local\microsoft\visualstudio\16.0_7dd63c94\extensions\zosfvyjy.qqw\Library\bin\Release\net45\DotNetBrowser.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net">
+      <HintPath>..\..\..\appdata\local\microsoft\visualstudio\16.0_7dd63c94\extensions\zosfvyjy.qqw\Library\bin\Release\net45\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net.Reflection">
+      <HintPath>..\..\..\appdata\local\microsoft\visualstudio\16.0_7dd63c94\extensions\zosfvyjy.qqw\Library\bin\Release\net45\protobuf-net.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\DailyReport1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DailyReport1.Designer.cs">
+      <DependentUpon>DailyReport1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DailyReport2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DailyReport2.Designer.cs">
+      <DependentUpon>DailyReport2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DailyReport3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DailyReport3.Designer.cs">
+      <DependentUpon>DailyReport3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Expenses.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Expenses.Designer.cs">
+      <DependentUpon>Expenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Income.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Income.Designer.cs">
+      <DependentUpon>Income.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Index1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Index1.Designer.cs">
+      <DependentUpon>Index1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MapPoints.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MapPoints.Designer.cs">
+      <DependentUpon>MapPoints.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MonthlyReport1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MonthlyReport1.Designer.cs">
+      <DependentUpon>MonthlyReport1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Settings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Statements.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Statements.Designer.cs">
+      <DependentUpon>Statements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Weekly Report 1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Weekly Report 1.Designer.cs">
+      <DependentUpon>Weekly Report 1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\DailyReport1.es-ES.resx">
+      <DependentUpon>DailyReport1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DailyReport1.fr-FR.resx">
+      <DependentUpon>DailyReport1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DailyReport1.resx">
+      <DependentUpon>DailyReport1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DailyReport2.es-ES.resx">
+      <DependentUpon>DailyReport2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DailyReport2.fr-FR.resx">
+      <DependentUpon>DailyReport2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DailyReport2.resx">
+      <DependentUpon>DailyReport2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DailyReport3.es-ES.resx">
+      <DependentUpon>DailyReport3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DailyReport3.fr-FR.resx">
+      <DependentUpon>DailyReport3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DailyReport3.resx">
+      <DependentUpon>DailyReport3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Expenses.es-ES.resx">
+      <DependentUpon>Expenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Expenses.fr-FR.resx">
+      <DependentUpon>Expenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Expenses.resx">
+      <DependentUpon>Expenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Income.es-ES.resx">
+      <DependentUpon>Income.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Income.fr-FR.resx">
+      <DependentUpon>Income.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Income.resx">
+      <DependentUpon>Income.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Index1.es-ES.resx">
+      <DependentUpon>Index1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Index1.fr-FR.resx">
+      <DependentUpon>Index1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Index1.resx">
+      <DependentUpon>Index1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MapPoints.resx">
+      <DependentUpon>MapPoints.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MonthlyReport1.es-ES.resx">
+      <DependentUpon>MonthlyReport1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MonthlyReport1.fr-FR.resx">
+      <DependentUpon>MonthlyReport1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MonthlyReport1.resx">
+      <DependentUpon>MonthlyReport1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings.es-ES.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings.fr-FR.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Statements.es-ES.resx">
+      <DependentUpon>Statements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Statements.fr-FR.resx">
+      <DependentUpon>Statements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Statements.resx">
+      <DependentUpon>Statements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Weekly Report 1.es-ES.resx">
+      <DependentUpon>Weekly Report 1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Weekly Report 1.fr-FR.resx">
+      <DependentUpon>Weekly Report 1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Weekly Report 1.resx">
+      <DependentUpon>Weekly Report 1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Dispatch\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LotusLogo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report_card_3_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report_card_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gold_exchange_pound_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money_pound_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\price_tag_pound_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Purp_exchange_pound_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purp_price_tag_pound_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purple_money_pound_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LotusLogo4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LotusLogo2.4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search2_50px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_2_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_3_48px.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
